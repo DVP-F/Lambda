@@ -7,8 +7,6 @@ ONE  = SUCC(ZERO)
 TWO  = SUCC(ONE)
 THREE = SUCC(TWO)
 
-to_int = lambda n: n(lambda x: x + 1)(0)
-
 print(to_int(ZERO))         # 0
 print(to_int(THREE))        # 3
 print(to_int(ADD(TWO)(THREE)))   # 5
